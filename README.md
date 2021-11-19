@@ -1,3 +1,3 @@
-# CD-8
+# Pog-16
 Emulator for custom architecture
  ## About
