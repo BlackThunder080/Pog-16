@@ -1,9 +1,6 @@
 import re
 import argparse
 
-import ctypes
-ctypes.windll.user32.MessageBoxW(None, u"CUSTOM MESSAGE", u"TITLE BAR", 0)
-
 instructs = {
     'mov': '0x0001',
     'ptr': '0x0002',
@@ -145,7 +142,7 @@ for line in open(args.file, 'r').readlines():
         try:
             byte_line[i] = int(val, 16).to_bytes(2, 'big')
         except ValueError:
-            raise SyntaxError('Error Parsing Hex Bytes') from None
+            raise SyntaxError('Invalid Hex Bytes') from None
     byte_line = pad(byte_line, b'\xff\xff', 5)
 
     f.write(bytearray(b''.join(i for i in byte_line)))
