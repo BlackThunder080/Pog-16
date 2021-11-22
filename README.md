@@ -1,3 +1,11 @@
 # Pog-16
 Emulator for custom architecture
- ## About
+## About
+
+---
+
+## Building and Running
+__Building:__
+`mkdir hi`
+
+---
