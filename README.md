@@ -18,7 +18,7 @@ __Hardware:__
 ## Building
 
 Included build is for windows, to manually build use:
-* Emulator: `gcc source\emulator.c -o emulator.exe`
+* Emulator: `gcc source\emulator.c -o build\emulator.exe`
 * Assembler `python setup.py build`
 
 ---
